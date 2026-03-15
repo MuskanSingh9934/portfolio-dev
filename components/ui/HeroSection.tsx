@@ -21,7 +21,7 @@ const HeroSection = ({ className }: { className?: string }) => {
               <div className="w-5 h-5 bg-blue-600 rounded-md flex items-center justify-center">
                 <Bot size={14} className="text-white" />
               </div>
-              <span className="text-slate-200 font-semibold">AI-first career tools</span>
+              <span className="text-slate-200 font-semibold">Building Clever AI</span>
             </div>
           </motion.div>
 
@@ -64,7 +64,7 @@ const HeroSection = ({ className }: { className?: string }) => {
             className="flex flex-wrap justify-center gap-4 md:gap-8 mt-8 text-lg font-medium text-slate-400"
           >
             <div className="flex items-center gap-3 px-4 py-2 bg-slate-900/50 rounded-2xl border border-slate-800/50">
-              <span className="text-slate-300">Front-End Systems</span>
+              <span className="text-slate-300">Front-End Developer</span>
               <div className="w-8 h-8 bg-slate-800 rounded-lg flex items-center justify-center text-cyan-400 border border-slate-700">
                 <Code2 size={18} />
               </div>
@@ -78,7 +78,7 @@ const HeroSection = ({ className }: { className?: string }) => {
             </div>
 
             <div className="flex items-center gap-3 px-4 py-2 bg-slate-900/50 rounded-2xl border border-slate-800/50">
-              <span className="text-slate-300">Career Tools</span>
+              <span className="text-slate-300">UI Design</span>
               <div className="w-8 h-8 bg-slate-800 rounded-lg flex items-center justify-center text-purple-400 border border-slate-700">
                 <Link size={18} />
               </div>

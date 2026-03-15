@@ -1,12 +1,28 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 const experiences = [
+    {
+        company: "Clever AI",
+        role: "Frontend Developer",
+        date: "December 2025 – Present",
+        icon: <Image src="/clever.png" alt="aminurus" height={200} width={400} />,
+        bgColor: "bg-blue-500/10",
+        bullets: [
+            "Performed market research to understand user needs and guide product UI decisions.",
+            "Designed intuitive UX flows and converted design mockups into responsive frontend interfaces.",
+            "Developed scalable UI components using Nextjs, Tailwind CSS, and shadcn/ui.",
+            "Leveraged AI tools to accelerate UI development and improve workflow productivity.",
+            "Collaborated in Agile sprints with cross-functional teams while managing code with Git."
+        ]
+
+    },
     {
         company: "Aminurus Technology",
         role: "Frontend Developer Intern",
         date: "Aug 2024 – Feb 2025",
-        icon: <span className="text-3xl font-bold text-white">MS</span>,
+        icon: <Image src="/aminurmus.jpeg" alt="aminurus" height={200} width={400} />,
         bgColor: "bg-blue-500/10",
         bullets: [
             "Developed a reusable React component architecture to improve UI scalability and maintainability.",

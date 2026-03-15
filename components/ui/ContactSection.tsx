@@ -28,7 +28,7 @@ export function ContactSection() {
                             Ready to <span className="text-blue-500">Collaborate</span>
                         </h2>
                         <p className="max-w-xl text-lg text-slate-400 leading-relaxed mx-auto md:mx-0">
-                            I am happy to talk about AI, front-end experiments, or career tooling. Email me at <span className="text-blue-300">muskansinghusa22@gmail.com</span> or call <span className="text-blue-300">+91 7782061632</span>, and let&apos;s build something useful.
+                            I am happy to talk about AI, front-end experiments. Email me at <span className="text-blue-300">muskansinghusa22@gmail.com</span> and let&apos;s build something useful.
                         </p>
                     </div>
 
