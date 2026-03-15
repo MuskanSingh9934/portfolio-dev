@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 const experiences = [
     {
-        company: "Clever AI",
+        company: "Clever AI and OctaClaw",
         role: "Frontend Developer",
         date: "December 2025 – Present",
         icon: <Image src="/clever.png" alt="aminurus" height={200} width={400} />,
