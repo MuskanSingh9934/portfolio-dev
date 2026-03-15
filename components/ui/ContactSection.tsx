@@ -25,16 +25,16 @@ export function ContactSection() {
                 <div className="relative z-10 flex w-full flex-col items-center justify-between space-y-10 px-8 py-20 md:flex-row md:space-y-0 text-white">
                     <div className="text-center md:text-left">
                         <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-                            Ready to <span className="text-blue-500">Chat</span>{" "}
+                            Ready to <span className="text-blue-500">Collaborate</span>
                         </h2>
                         <p className="max-w-xl text-lg text-slate-400 leading-relaxed mx-auto md:mx-0">
-                            I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Whether you have a question or just want to say hi, my inbox is always open.
+                            I am happy to talk about AI, front-end experiments, or career tooling. Email me at <span className="text-blue-300">muskansinghusa22@gmail.com</span> or call <span className="text-blue-300">+91 7782061632</span>, and let&apos;s build something useful.
                         </p>
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
                         <a
-                            href="mailto:sameer.kattubadi@gmail.com"
+                            href="mailto:muskansinghusa22@gmail.com"
                             className="group flex items-center justify-center gap-2 rounded-2xl bg-white px-8 py-4 text-sm font-bold text-black transition-all hover:bg-slate-200 hover:scale-[1.02] active:scale-95 shadow-[0_0_20px_rgba(255,255,255,0.1)]"
                         >
                             Get in Touch
@@ -42,10 +42,10 @@ export function ContactSection() {
                         </a>
 
                         <div className="flex items-center justify-center gap-4 px-4 py-4 rounded-2xl border border-slate-800 backdrop-blur-xl bg-slate-900/50">
-                            <a href="https://github.com/SSameer20" target="_blank" rel="noopener noreferrer" className="p-2 text-slate-400 hover:text-white transition-colors">
+                            <a href="https://github.com/MuskanSingh9934" target="_blank" rel="noopener noreferrer" className="p-2 text-slate-400 hover:text-white transition-colors">
                                 <Github size={20} />
                             </a>
-                            <a href="https://www.linkedin.com/in/20-sameershaik/" target="_blank" rel="noopener noreferrer" className="p-2 text-slate-400 hover:text-white transition-colors">
+                            <a href="https://www.linkedin.com/in/muskan-singh99/" target="_blank" rel="noopener noreferrer" className="p-2 text-slate-400 hover:text-white transition-colors">
                                 <Linkedin size={20} />
                             </a>
                         </div>

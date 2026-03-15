@@ -4,66 +4,63 @@ import { motion } from "framer-motion";
 import {
     SiTypescript,
     SiCplusplus,
-    SiNodedotjs,
-    SiRabbitmq,
-    SiPostgresql,
-    SiRedis,
-    SiPrisma,
-    SiDocker,
+    SiJavascript,
+    SiPython,
+    SiNextdotjs,
+    SiTailwindcss,
+    SiGithub,
     SiGithubcopilot,
-    SiGo
 } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
 import {
-    LuGlobe,
-    LuZap,
+    LuListTree,
     LuGitBranch,
     LuActivity,
     LuBoxes,
+    LuTextCursor,
+    LuZap,
+    LuClipboardList,
     LuBrain,
-    LuListTree
 } from "react-icons/lu";
-import { FaAws } from "react-icons/fa6";
 
 const skillCategories = [
     {
-        title: "Languages",
+        title: "Programming",
         skills: [
             { name: "TypeScript", icon: <SiTypescript className="text-[#3178C6]" /> },
             { name: "C++", icon: <SiCplusplus className="text-[#00599C]" /> },
-            { name: "GoLang", icon: <SiGo className="text-[#00599C]" /> },
-
+            { name: "JavaScript", icon: <SiJavascript className="text-[#F7DF1E]" /> },
+            { name: "Python", icon: <SiPython className="text-[#3776AB]" /> },
+            { name: "Data Structures", icon: <LuListTree className="text-[#22D3EE]" /> },
         ],
     },
     {
-        title: "Backend & Systems",
+        title: "Frontend & AI",
         skills: [
-            { name: "Node.js", icon: <SiNodedotjs className="text-[#339933]" /> },
-            { name: "REST APIs", icon: <LuGlobe className="text-[#E91E63]" /> },
-            { name: "WebSockets", icon: <LuZap className="text-[#FFC107]" /> },
-            { name: "RabbitMQ", icon: <SiRabbitmq className="text-[#FF6600]" /> },
-            { name: "System Design", icon: <LuBoxes className="text-[#795548]" /> },
-            { name: "LLMs", icon: <LuBrain className="text-[#607D8B]" /> },
+            { name: "React.js", icon: <FaReact className="text-[#61DAFB]" /> },
+            { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
+            { name: "Tailwind CSS", icon: <SiTailwindcss className="text-[#38B2AC]" /> },
+            { name: "Generative AI", icon: <LuBrain className="text-[#8B5CF6]" /> },
+        ],
+    },
+    {
+        title: "Tools",
+        skills: [
+            { name: "Git", icon: <LuGitBranch className="text-[#F97316]" /> },
+            { name: "GitHub", icon: <SiGithub className="text-[#181717]" /> },
             { name: "Copilot", icon: <SiGithubcopilot className="text-black" /> },
+            { name: "ChatGPT", icon: <LuZap className="text-[#22D3EE]" /> },
+            { name: "Cursor", icon: <LuTextCursor className="text-[#F43F5E]" /> },
         ],
     },
     {
-        title: "Databases",
+        title: "Methodologies",
         skills: [
-            { name: "PostgreSQL", icon: <SiPostgresql className="text-[#4169E1]" /> },
-            { name: "Redis", icon: <SiRedis className="text-[#DC382D]" /> },
-            { name: "PrismaORM", icon: <SiPrisma className="text-black" /> },
+            { name: "Agile", icon: <LuActivity className="text-[#7C3AED]" /> },
+            { name: "Version Control", icon: <LuBoxes className="text-[#0EA5E9]" /> },
+            { name: "Clean Code Practices", icon: <LuClipboardList className="text-[#F97316]" /> },
         ],
     },
-    {
-        title: "Cloud",
-        skills: [
-            { name: "AWS", icon: <FaAws className="text-[#FF9900]" /> },
-            { name: "Docker", icon: <SiDocker className="text-[#2496ED]" /> },
-            { name: "CI/CD", icon: <LuGitBranch className="text-[#F05032]" /> },
-            { name: "Infrastructure Monitoring", icon: <LuActivity className="text-[#4CAF50]" /> },
-        ],
-    },
-
 ];
 
 const SkillsSection = ({ className }: { className?: string }) => {

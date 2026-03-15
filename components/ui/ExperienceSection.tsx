@@ -1,35 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 const experiences = [
     {
-        company: "Clever AI & OctaClaw",
-        role: "Founder & Developer",
-        date: "Dec 2025 - Present",
-        icon: <Image src="/clever_ai.png" alt="Clever AI" width={60} height={60} />,
+        company: "Aminurus Technology",
+        role: "Frontend Developer Intern",
+        date: "Aug 2024 – Feb 2025",
+        icon: <span className="text-3xl font-bold text-white">MS</span>,
         bgColor: "bg-blue-500/10",
-    },
-    {
-        company: "OmniqAI",
-        role: "Software Engineer",
-        date: "Aug 2025 - Dec 2025",
-        icon: <Image src="/omniqai_logo.jpeg" alt="omniqai" width={60} height={60} />,
-        bgColor: "bg-green-500/10",
-    },
-    {
-        company: "OmniqAI",
-        role: "Software Engineer Intern",
-        date: "May 2025 - Aug 2025",
-        icon: <Image src="/omniqai_logo.jpeg" alt="omniqai" width={60} height={60} />,
-        bgColor: "bg-lime-500/10",
-    },
-    {
-        company: "Capgemini",
-        role: "Intern",
-        date: "Jan 2025 - May 2025",
-        icon: <Image src="/capgemini_logo.jpeg" alt="capgemini" width={60} height={60} />,
-        bgColor: "bg-slate-900",
+        bullets: [
+            "Developed a reusable React component architecture to improve UI scalability and maintainability.",
+            "Integrated REST APIs and implemented dynamic data rendering with React Hooks and local state.",
+            "Performed manual testing and debugging through Chrome DevTools to reduce front-end defects before deployment.",
+            "Optimized page performance by trimming unnecessary re-renders and improving load efficiency.",
+            "Collaborated in Agile sprints with daily stand-ups and maintained version control through Git."
+        ],
     },
 ];
 
@@ -55,25 +40,36 @@ const ExperienceSection = ({ className }: { className?: string }) => {
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="flex flex-col md:flex-row md:items-center justify-between gap-4 p-4 rounded-3xl hover:bg-slate-900/50 transition-colors group border border-transparent hover:border-slate-800"
+                            className="flex flex-col gap-4 p-4 rounded-3xl hover:bg-slate-900/50 transition-colors group border border-transparent hover:border-slate-800"
                         >
-                            <div className="flex items-center gap-6">
-                                <div
-                                    className={`w-16 h-16 rounded-full flex items-center justify-center border-4 border-slate-800 shadow-xl overflow-hidden shrink-0 ${exp.bgColor}`}
-                                >
-                                    {exp.icon}
+                            <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                                <div className="flex items-center gap-6">
+                                    <div
+                                        className={`w-16 h-16 rounded-full flex items-center justify-center border-4 border-slate-800 shadow-xl overflow-hidden shrink-0 ${exp.bgColor}`}
+                                    >
+                                        {exp.icon}
+                                    </div>
+                                    <div>
+                                        <h3 className="text-xl font-bold text-slate-100 group-hover:text-blue-300 transition-colors flex items-center gap-2">
+                                            {exp.company}
+                                        </h3>
+                                        <p className="text-slate-400 font-medium">{exp.role}</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3 className="text-xl font-bold text-slate-100 group-hover:text-blue-300 transition-colors flex items-center gap-2">
-                                        {exp.company}
-                                        {exp.company === "Splunk" && <span className="text-slate-500 font-normal group-hover:text-blue-300 transition-colors"> &gt;</span>}
-                                    </h3>
-                                    <p className="text-slate-400 font-medium">{exp.role}</p>
+                                <div className="text-slate-500 font-semibold md:text-right">
+                                    {exp.date}
                                 </div>
                             </div>
-                            <div className="text-slate-500 font-semibold md:text-right">
-                                {exp.date}
-                            </div>
+                            {exp.bullets && (
+                                <ul className="space-y-3 text-sm text-slate-400 leading-relaxed">
+                                    {exp.bullets.map((bullet, bulletIndex) => (
+                                        <li key={bulletIndex} className="flex gap-2">
+                                            <span className="mt-1 h-2.5 w-2.5 rounded-full bg-blue-500 shrink-0" />
+                                            <span>{bullet}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
                         </motion.div>
                     ))}
                 </div>

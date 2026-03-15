@@ -1,54 +1,40 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Terminal, Coins, ExternalLink, Github, Sparkles } from "lucide-react";
-import Image from "next/image";
+import { ExternalLink, Sparkles } from "lucide-react";
 
 const projects = [
     {
-        title: "Clever AI",
-        subtitle: "Private, real-time AI meeting co-pilot",
+        title: "AI Resume Analyzer & Generator",
+        subtitle: "Career insights and ATS-ready resume automation",
         points: [
-            "Engineered a low-latency audio processing pipeline to provide real-time AI assistance during meetings.",
-            "Implemented intelligent background extraction of action items and key takeaways using advanced LLM orchestration.",
-            "Developed a local-first interface that delivers 'quiet intelligence' by providing accurate answers in the background without user intervention."
+            "Built an AI-powered resume analyzer that evaluates documents using ATS-style scoring and keyword matching.",
+            "Implemented job-description comparison to surface missing skills and improve resume-job alignment.",
+            "Developed an AI-based resume generator to create structured, ATS-friendly resumes from user inputs.",
+            "Provided section-wise AI feedback and improvement suggestions for summary, skills, experience, and education.",
         ],
-        icon: <Image src="/clever_ai.png" alt="Clever AI" width={48} height={48} className="rounded-xl shadow-lg" />,
-        tags: ["Electron", "Next.js", "LLMs", "WebSocket", "Supermemory"],
-        gradient: "from-blue-600/20 to-cyan-400/10",
-        live: `https://clever.qluely.in/downloads`,
-        border: "border-blue-500/20",
-        hoverBorder: "group-hover:border-blue-500/50"
+        icon: <Sparkles className="w-12 h-12 text-sky-400" />, 
+        tags: ["AI", "Next.js", "TypeScript", "Prompt Engineering"],
+        gradient: "from-cyan-500/20 to-blue-500/10",
+        live: "",
+        border: "border-cyan-500/20",
+        hoverBorder: "group-hover:border-cyan-500/50"
     },
     {
-        title: "OctaClaw",
-        subtitle: "Realtime OfficeRoom for AI Agents",
+        title: "AI Color Palette Generator & Tailwind Exporter",
+        subtitle: "Gemini-powered branding toolkit",
         points: [
-            "Built a 'Realtime OfficeRoom' for AI agents running on local machines, enabling distributed orchestration for modern AI workflows.",
-            "Optimized system resource management and process isolation for agents, ensuring secure and efficient local execution.",
-            "Integrated real-time state synchronization using high-performance socket communication for seamless agent-human interaction."
+            "Built an AI-powered web tool that generates brand color palettes based on website type, design style, and branding preferences.",
+            "Integrated the Gemini API to dynamically generate multiple palette combinations using generative prompts.",
+            "Implemented Tailwind CSS export so developers can copy palette values directly into UI projects.",
+            "Designed an interactive UI with palette previews, copy-to-clipboard controls, and responsive layouts for comparing multiple palettes.",
         ],
-        icon: <Terminal className="w-10 h-10 text-purple-400" />,
+        icon: <div className="text-3xl">🎨</div>,
+        tags: ["Gemini", "Tailwind CSS", "Next.js", "Design Systems"],
+        gradient: "from-amber-500/20 to-orange-500/10",
         live: "",
-        tags: ["ThreeJS", "Agentic AI", "WebSockets"],
-        gradient: "from-purple-600/20 to-pink-400/10",
-        border: "border-purple-500/20",
-        hoverBorder: "group-hover:border-purple-500/50"
-    },
-    {
-        title: "SushiCoins",
-        subtitle: "P2P Crypto Trading Platform",
-        points: [
-            "Designed and implemented real-time trade and chat communication using WebSockets with delivery acknowledgments to ensure message consistency.",
-            "Built a custodial wallet backend with strict balance validation and double-spend prevention using transactional guarantees.",
-            "Developed a high-performance matching engine for P2P orders with secure escrow management and automated dispute resolution."
-        ],
-        icon: <Coins className="w-10 h-10 text-emerald-400" />,
-        live: "",
-        tags: ["Web3", "Next.js", "TypeScript", "PostgreSQL"],
-        gradient: "from-emerald-600/20 to-teal-400/10",
-        border: "border-emerald-500/20",
-        hoverBorder: "group-hover:border-emerald-500/50"
+        border: "border-amber-500/20",
+        hoverBorder: "group-hover:border-amber-500/50"
     },
 ];
 

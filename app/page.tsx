@@ -5,9 +5,7 @@ import ExperienceSection from "@/components/ui/ExperienceSection";
 import About from "@/components/ui/About";
 import SkillsSection from "@/components/ui/SkillsSection";
 import ProjectsSection from "@/components/ui/ProjectsSection";
-import HackathonSection from "@/components/ui/HackathonSection";
 import ContactSection from "@/components/ui/ContactSection";
-import SocialSection from "@/components/ui/SocialSection";
 
 
 export default function HomePage() {
@@ -17,10 +15,8 @@ export default function HomePage() {
       <About className="h-screen w-screen" />
       <ExperienceSection className="h-screen w-screen" />
       <ProjectsSection />
-      <HackathonSection />
       <SkillsSection />
       <ContactSection />
-      {/* <SocialSection /> */}
 
     </main>
   );

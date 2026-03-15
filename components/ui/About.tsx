@@ -25,35 +25,21 @@ const About = ({ className }: { className?: string }) => {
                     className="text-lg md:text-xl leading-relaxed text-slate-400 font-medium space-y-6"
                 >
                     <div>
-                        I completed my bachelor’s degree from{" "}
-                        <Tooltip content={<Image src="/lpu.jpg" alt="lpu" height={200} width={400} />}>
-
-                            <span className="text-slate-100 border-b-2 border-slate-700 pb-0.5">
-                                Lovely Professional University
-                            </span>
-                        </Tooltip>
-                        , where my interest in startups and product building grew stronger.
+                        I am pursuing a Master of Computer Applications at <Tooltip content={<Image src="/lpu.jpg" alt="lpu" height={200} width={400} />}>
+                            <span className="text-slate-100 border-b-2 border-slate-700 pb-0.5">Lovely Professional University</span>
+                        </Tooltip> while building AI-powered products that help people present their skills clearly and confidently.
                     </div>
 
                     <div>
-                        I like studying problems, breaking them down, and{" "}
-                        <Tooltip content={<InterestingProblems />}>
-                            <span className="text-slate-100 border-b-2 border-slate-700 pb-0.5">
-                                creating practical solutions
-                            </span>{" "}
-                        </Tooltip>
-                        through software. My mindset toward any task is simple: either I already know how to do it, or I learn and figure it out.
+                        I like studying problems, breaking them down, and <Tooltip content={<InterestingProblems />}>
+                            <span className="text-slate-100 border-b-2 border-slate-700 pb-0.5">designing practical workflows</span>
+                        </Tooltip> that mix front-end polish with AI prompts.
                     </div>
 
                     <div>
-                        I spend most of my time building projects, experimenting with new technologies, and working on ideas that can become useful tools or products. For me, the most exciting part of technology is the ability to{" "}
-                        <Tooltip content={<Creation />}>
-                            <span className="text-slate-100 border-b-2 border-slate-700 pb-0.5">
-                                create something from nothing
-                            </span>
-                        </Tooltip>
-                        {" "}
-                        and see people use it.
+                        I spend most of my time building projects, experimenting with new technologies, and working on ideas that can become useful tools or products. For me, the most exciting part of technology is the ability to <Tooltip content={<Creation />}>
+                            <span className="text-slate-100 border-b-2 border-slate-700 pb-0.5">ship something that helps others</span>
+                        </Tooltip> and see people use it in their careers.
                     </div>
                 </motion.div>
             </div>
@@ -63,9 +49,9 @@ const About = ({ className }: { className?: string }) => {
 
 export function InterestingProblems() {
     const problems = [
-        "Managing private keys securely",
-        "Real time audio translation",
-        "Capturing system audio on macOS",
+        "Aligning resumes with job description requirements",
+        "Turning brand direction into usable palettes",
+        "Blending generative AI with responsive UI",
     ];
 
     return (
@@ -82,9 +68,9 @@ export function InterestingProblems() {
 }
 export function Creation() {
     const problems = [
-        "AI Copilot for Meetings",
-        "Realtime Office Room for Agents",
-        "DePin based Wallet Monitoring",
+        "AI Resume Analyzer & Generator",
+        "AI Color Palette Generator & Tailwind Exporter",
+        "Prompt-first career tooling",
     ];
 
     return (
