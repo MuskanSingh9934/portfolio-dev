@@ -49,10 +49,11 @@ const About = ({ className }: { className?: string }) => {
 
 export function InterestingProblems() {
     const problems = [
-        "Aligning resumes with job description requirements",
-        "Turning brand direction into usable palettes",
-        "Blending generative AI with responsive UI",
+        "Transforming design mockups into scalable interfaces",
+        "Speeding up UI development using AI-assisted tools",
+        "Building responsive, AI-integrated frontend experiences",
     ];
+
 
     return (
         <div style={{ fontFamily: "sans-serif" }}>
